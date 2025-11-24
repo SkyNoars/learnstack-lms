@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import SignOutButton from "@/components/signout-button";
 import {
   LogOut,
   Settings,
@@ -64,22 +63,22 @@ export function UserDropdown({ name, email, image }: TUserDropdown) {
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem className="gap-2">
+        <DropdownMenuItem className="focus:bg-muted gap-2">
           <Link href="/" className="flex items-center gap-2">
             <Home className="h-4 w-4" />
             <span>Home</span>
           </Link>
         </DropdownMenuItem>
 
-        <DropdownMenuItem className="gap-2">
+        <DropdownMenuItem className="focus:bg-muted gap-2">
           <Link href="/courses" className="flex items-center gap-2">
             <BookOpen className="h-4 w-4" />
             <span>Courses</span>
           </Link>
         </DropdownMenuItem>
 
-        <DropdownMenuItem className="gap-2">
-          <Link href="/dashboard" className="flex items-center gap-2">
+        <DropdownMenuItem className="focus:bg-muted gap-2">
+          <Link href="/admin" className="flex items-center gap-2">
             <LayoutDashboardIcon className="h-4 w-4" />
             <span>Dashboard</span>
           </Link>
@@ -88,15 +87,15 @@ export function UserDropdown({ name, email, image }: TUserDropdown) {
         <DropdownMenuSeparator />
 
         {/* Menu Items */}
-        <DropdownMenuItem className="gap-2">
+        <DropdownMenuItem className="focus:bg-muted gap-2">
           <User className="h-4 w-4" />
           <span>Profile</span>
         </DropdownMenuItem>
-        <DropdownMenuItem className="gap-2">
+        <DropdownMenuItem className="focus:bg-muted gap-2">
           <Settings className="h-4 w-4" />
           <span>Settings</span>
         </DropdownMenuItem>
-        <DropdownMenuItem className="gap-2">
+        <DropdownMenuItem className="focus:bg-muted gap-2">
           <HelpCircle className="h-4 w-4" />
           <span>Help & Support</span>
         </DropdownMenuItem>
@@ -104,11 +103,11 @@ export function UserDropdown({ name, email, image }: TUserDropdown) {
         <DropdownMenuSeparator />
 
         {/* Logout Item */}
-        <DropdownMenuItem className="w-fit gap-2 self-center rounded-md border border-red-400">
-          {/* <LogOut className="h-4 w-4" />
-          <span>Logout</span> */}
-          <LogOut className="h-4 w-4 text-red-400" />
-          <SignOutButton className="text-red-400" />
+        <DropdownMenuItem variant="destructive">
+          <LogOut className="h-4 w-4" />
+          <span>Logout</span>
+          {/* <LogOut className="h-4 w-4 text-red-400" />
+          <SignOutButton className="text-red-400" /> */}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

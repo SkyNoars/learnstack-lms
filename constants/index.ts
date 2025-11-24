@@ -39,6 +39,6 @@ export const navItems: TNavItems[] = [
   },
   {
     name: "Dashboard",
-    href: "/dashboard",
+    href: "/admin",
   },
 ];

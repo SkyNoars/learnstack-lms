@@ -1,7 +1,12 @@
 import Logo from "@/components/logo";
 import SignInForm from "../_components/signin-form";
+import { getServerSession } from "@/lib/get-server-session";
+import { redirect } from "next/navigation";
 
-function SignInPage() {
+async function SignInPage() {
+  const session = await getServerSession();
+  if (session) redirect("/");
+
   return (
     <div className="bg-muted-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
       <div className="flex w-full max-w-sm flex-col gap-6">

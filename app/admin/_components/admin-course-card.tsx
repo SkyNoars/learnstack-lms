@@ -1,6 +1,6 @@
 import { AdminCourseType } from "@/app/data/admin/admin-get-courses";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,7 +14,6 @@ import {
   Edit,
   Eye,
   MoreVerticalIcon,
-  Pencil,
   SchoolIcon,
   TimerIcon,
   Trash2,
@@ -26,6 +25,7 @@ interface TCourse {
 }
 function AdminCourseCard({ data }: TCourse) {
   const thumbnailUrl = useConstructUrl(data.fileKey);
+  // TODO: Fetch image from s3 and use instead of constructing url
   return (
     <Card className="group relative gap-0 py-0">
       <div className="absolute top-2 right-2 z-10">
@@ -63,6 +63,7 @@ function AdminCourseCard({ data }: TCourse) {
         alt={thumbnailUrl}
         width={600}
         height={400}
+        // FIXME: unoptimized is bad
         unoptimized
         className="aspect-video h-full w-full rounded-t-lg object-cover"
       />

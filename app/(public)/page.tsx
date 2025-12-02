@@ -1,4 +1,3 @@
-import { getServerSession } from "@/lib/get-server-session";
 import Hero from "./_sections/hero";
 import Features from "./_sections/features";
 import PopularCourses from "./_sections/popular-courses";
@@ -22,3 +21,26 @@ async function HomePage() {
 }
 
 export default HomePage;
+
+// Structure
+/**
+ * ************* Public Route ***********************
+ * <public>
+ *   <header></header> => client //--header fetches auth data on client side
+ *   <main> => server
+ *      <section></section> => client
+ *   </main>
+ *   <Footer></Footer> => client
+ * </public>
+ *
+ * ************* Admin Route **************************
+ *
+ * <admin>
+ *   <sidebarprovider>
+ *     <sidebar></sidebar>
+ *     <sidebarinset>
+ *        {children}
+ *     </sidebarinset>
+ *   </sidebarprovider>
+ * </admin>
+ */

